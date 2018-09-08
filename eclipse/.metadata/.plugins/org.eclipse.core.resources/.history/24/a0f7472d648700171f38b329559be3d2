@@ -1,0 +1,37 @@
+package com.snoopy_wwi_ace.death_mod;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntityChest;
+
+public class LocationProvider {
+	
+	private Vec home;
+	private static final int[] offsets = {1, 0, -1, 0};
+	
+	public LocationProvider(int x, int y, int z) {
+		home = new Vec(x, y, z);
+	}
+	
+	public LocationProvider(EntityPlayer player) {
+		this((int)player.posX, (int)player.posY, (int)player.posZ);
+	}
+	
+	public TileEntityChest getChestLocation() {
+		
+	}
+	
+	private class Vec {
+		public int x, y, z;
+		public Vec(int xIn, int yIn, int zIn) {
+			x = xIn;
+			y = yIn;
+			z = zIn;
+		}
+		public Vec(Vec VecIn) {
+			x = VecIn.x;
+			y = VecIn.y;
+			z = VecIn.z;
+		}
+	}
+
+}

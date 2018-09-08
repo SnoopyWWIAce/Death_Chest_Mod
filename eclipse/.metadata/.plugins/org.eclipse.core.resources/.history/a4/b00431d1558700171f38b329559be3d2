@@ -1,0 +1,16 @@
+package com.snoopy_wwi_ace.death_mod;
+
+public class LocationProvider {
+	
+	
+	
+	private class Vec {
+		public int x, y, z;
+		public Vec(int xIn, int yIn, int zIn) {
+			x = xIn;
+			y = yIn;
+			z = zIn;
+		}
+	}
+
+}
